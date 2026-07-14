@@ -16,16 +16,16 @@
 
 <body class="bg-[#f8f8fa] text-[#081d57] min-h-screen">
   <header class="flex flex-col md:flex-row justify-between items-center px-10 py-6 bg-white shadow-sm">
-    <div class="flex items-center gap-4 mb-4 md:mb-0">
+    <a href="index.html" class="flex items-center gap-4 mb-4 md:mb-0">
       <img src="images/LOGO SLAP TRANSP.png" alt="SLAP 2027 Logo" class="h-20 w-auto" />
-    </div>
+    </a>
     <nav class="flex flex-wrap justify-center gap-8 text-sm font-semibold items-center">
-      <a href="#" class="border-b-2 border-[#6c4698] pb-1">INICIO</a>
-      <a href="#" class="hover:text-[#6c4698] transition-colors">SOBRE EL EVENTO</a>
-      <a href="#" class="hover:text-[#6c4698] transition-colors">EXPOSITORES</a>
-      <button class="bg-[#6c4698] text-white px-6 py-2 rounded-full hover:bg-[#523375] transition-colors">
+      <a href="index.html" class="border-b-2 border-[#6c4698] pb-1">INICIO</a>
+      <a href="#sobre-el-evento" class="hover:text-[#6c4698] transition-colors">SOBRE EL EVENTO</a>
+      <a href="#expositores" class="hover:text-[#6c4698] transition-colors">EXPOSITORES</a>
+      <a href="formulario.html" class="bg-[#6c4698] text-white px-6 py-2 rounded-full hover:bg-[#523375] transition-colors">
         INSCRIPCIÓN
-      </button>
+      </a>
     </nav>
   </header>
 
@@ -70,20 +70,20 @@
         </div>
 
         <div class="flex flex-wrap gap-4">
-          <button
+          <a href="formulario.html"
             class="bg-[#6c4698] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#523375] transition-colors shadow-lg shadow-[#6c4698]/30">
             INSCRIBIRME
-          </button>
-          <button
+          </a>
+          <a href="#sobre-el-evento"
             class="bg-white text-[#081d57] border-2 border-[#6c4698] px-8 py-3 rounded-full font-semibold hover:bg-gray-50 transition-colors">
             Más información
-          </button>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section
+  <section id="sobre-el-evento"
     class="max-w-6xl mx-auto px-10 py-16 flex flex-col md:flex-row justify-center gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white shadow-sm mt-8 rounded-xl relative z-20">
     <div class="flex-1 px-4 flex flex-col items-center pt-8 md:pt-0">
       <div
@@ -105,7 +105,7 @@
         Conoce a los integrantes del Comité Científico del congreso.
       </p>
     </div>
-    <div class="flex-1 px-4 flex flex-col items-center pt-8 md:pt-0">
+    <div id="expositores" class="flex-1 px-4 flex flex-col items-center pt-8 md:pt-0">
       <div
         class="w-16 h-16 rounded-full bg-[#f8f8fa] flex items-center justify-center text-[#6c4698] text-3xl mb-4 border border-[#6c4698]/20">
         👨‍🏫
