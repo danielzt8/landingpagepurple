@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expositores - SLAP 2027</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#f8f8fa] text-[#081d57] min-h-screen flex flex-col justify-between">
+
+  <!-- Header / Navbar -->
+  <header class="flex flex-col md:flex-row justify-between items-center px-10 py-6 bg-white shadow-sm">
+    <div class="flex items-center gap-4 mb-4 md:mb-0">
+      <div class="w-16 h-16 bg-[#081d57] rounded-full flex items-center justify-center text-white font-bold text-xs">LOGO</div>
+      <div>
+        <h1 class="text-2xl font-bold leading-tight">SLAP<br>2027</h1>
+        <p class="text-[10px] tracking-widest uppercase">Congreso Latinoamericano<br>de Patología</p>
+      </div>
+    </div>
+    <nav class="flex flex-wrap justify-center gap-8 text-sm font-semibold items-center">
+      <a href="#" class="hover:text-[#6c4698] transition-colors">INICIO</a>
+      <a href="#" class="hover:text-[#6c4698] transition-colors">SOBRE EL EVENTO</a>
+      <a href="#" class="border-b-2 border-[#6c4698] pb-1 text-[#6c4698]">EXPOSITORES</a>
+      <a href="#" class="hover:text-[#6c4698] transition-colors">INSCRIPCIÓN</a>
+    </nav>
+  </header>
+
+  <!-- Main Content: Expositores -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-6 py-16">
+    
+    <!-- Título Principal -->
+    <div class="text-center mb-16">
+      <h2 class="text-[#4192a1] font-bold tracking-widest text-sm mb-2 uppercase">Conoce a nuestros invitados</h2>
+      <h3 class="text-4xl font-black text-[#081d57] uppercase">Expositores Nacionales e Internacionales</h3>
+      <div class="w-32 h-1 bg-gradient-to-r from-[#6c4698] to-[#d96837] mx-auto mt-4"></div>
+    </div>
+
+    <!-- Filtros (Opcional visualmente) -->
+    <div class="flex justify-center gap-4 mb-12 flex-wrap">
+      <button class="bg-[#6c4698] text-white px-6 py-2 rounded-full text-sm font-bold shadow-md">Todos</button>
+      <button class="bg-white border border-gray-200 text-gray-600 hover:text-[#6c4698] hover:border-[#6c4698] px-6 py-2 rounded-full text-sm font-bold transition-all">Internacionales</button>
+      <button class="bg-white border border-gray-200 text-gray-600 hover:text-[#6c4698] hover:border-[#6c4698] px-6 py-2 rounded-full text-sm font-bold transition-all">Nacionales</button>
+    </div>
+
+    <!-- Grid de Expositores -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      
+      <!-- Card Expositor (Repetir según sea necesario) -->
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
+        <!-- Foto Placeholder -->
+        <div class="h-56 bg-gray-200 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#081d57]/80 to-transparent z-10"></div>
+          <div class="w-full h-full bg-[#3d5a9d] flex items-center justify-center text-white/50 text-xs font-bold tracking-widest group-hover:scale-105 transition-transform duration-500">FOTO</div>
+          <!-- Etiqueta País -->
+          <div class="absolute bottom-3 left-4 z-20 flex items-center gap-2">
+            <span class="text-white text-xs font-bold tracking-wider">🌎 INTERNACIONAL</span>
+          </div>
+        </div>
+        <!-- Info -->
+        <div class="p-6">
+          <h4 class="font-black text-lg text-[#081d57] mb-1">Dr. Nombre Apellido</h4>
+          <p class="text-[#6c4698] font-bold text-xs uppercase mb-3">Patólogo Oncólogo</p>
+          <p class="text-sm text-gray-600 border-t border-gray-100 pt-3">Hospital General Universitario.<br>Especialista en biología molecular.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
+        <div class="h-56 bg-gray-200 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#081d57]/80 to-transparent z-10"></div>
+          <div class="w-full h-full bg-[#4192a1] flex items-center justify-center text-white/50 text-xs font-bold tracking-widest group-hover:scale-105 transition-transform duration-500">FOTO</div>
+          <div class="absolute bottom-3 left-4 z-20 flex items-center gap-2">
+            <span class="text-white text-xs font-bold tracking-wider">📍 NACIONAL</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h4 class="font-black text-lg text-[#081d57] mb-1">Dra. Nombre Apellido</h4>
+          <p class="text-[#6c4698] font-bold text-xs uppercase mb-3">Dermatopatóloga</p>
+          <p class="text-sm text-gray-600 border-t border-gray-100 pt-3">Instituto de Dermatología.<br>Investigadora principal.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
+        <div class="h-56 bg-gray-200 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#081d57]/80 to-transparent z-10"></div>
+          <div class="w-full h-full bg-[#d96837] flex items-center justify-center text-white/50 text-xs font-bold tracking-widest group-hover:scale-105 transition-transform duration-500">FOTO</div>
+          <div class="absolute bottom-3 left-4 z-20 flex items-center gap-2">
+            <span class="text-white text-xs font-bold tracking-wider">🌎 INTERNACIONAL</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h4 class="font-black text-lg text-[#081d57] mb-1">Dr. Nombre Apellido</h4>
+          <p class="text-[#6c4698] font-bold text-xs uppercase mb-3">Neuropatólogo</p>
+          <p class="text-sm text-gray-600 border-t border-gray-100 pt-3">Centro Médico de Especialidades.<br>Autor de 50+ publicaciones.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
+        <div class="h-56 bg-gray-200 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#081d57]/80 to-transparent z-10"></div>
+          <div class="w-full h-full bg-[#6c4698] flex items-center justify-center text-white/50 text-xs font-bold tracking-widest group-hover:scale-105 transition-transform duration-500">FOTO</div>
+          <div class="absolute bottom-3 left-4 z-20 flex items-center gap-2">
+            <span class="text-white text-xs font-bold tracking-wider">📍 NACIONAL</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h4 class="font-black text-lg text-[#081d57] mb-1">Dra. Nombre Apellido</h4>
+          <p class="text-[#6c4698] font-bold text-xs uppercase mb-3">Patóloga Forense</p>
+          <p class="text-sm text-gray-600 border-t border-gray-100 pt-3">Instituto Nacional de Ciencias Forenses.<br>Directora de departamento.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#081d57] text-white px-10 py-12 mt-12">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      
+      <div class="flex items-center gap-4">
+         <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#081d57] font-bold text-[10px]">LOGO</div>
+         <div>
+          <h1 class="text-xl font-bold leading-tight">SLAP<br>2027</h1>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs">
+         <div class="w-8 h-8 rounded-full border border-[#4192a1] flex items-center justify-center text-[#4192a1] text-base">📍</div>
+         <div>
+           <p class="font-bold">CENTRO DE CONVENCIONES</p>
+           <p class="text-[#4192a1]">BARCELÓ PUNTA CANA</p>
+           <p class="opacity-70">PUNTA CANA, REPÚBLICA DOMINICANA</p>
+         </div>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs">
+         <div class="w-8 h-8 rounded-full border border-[#6c4698] flex items-center justify-center text-[#6c4698] text-base">📅</div>
+         <div>
+           <p class="font-bold text-sm">20 - 30</p>
+           <p class="opacity-70">OCTUBRE, 2027</p>
+         </div>
+      </div>
+
+      <div>
+        <p class="text-xs font-bold mb-2 text-center md:text-left">SÍGUENOS</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-8 h-8 bg-white text-[#081d57] rounded-full flex items-center justify-center font-bold hover:bg-gray-200 transition-colors">f</a>
+          <a href="#" class="w-8 h-8 bg-white text-[#081d57] rounded-full flex items-center justify-center font-bold hover:bg-gray-200 transition-colors">IG</a>
+          <a href="#" class="w-8 h-8 bg-white text-[#081d57] rounded-full flex items-center justify-center font-bold hover:bg-gray-200 transition-colors">in</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
