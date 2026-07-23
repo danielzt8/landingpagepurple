@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - SLAP 2027</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#f8f8fa] text-[#081d57] min-h-screen flex flex-col justify-between">
+
+  <!-- Header / Navbar -->
+  <header class="flex flex-col md:flex-row justify-between items-center px-10 py-6 bg-white shadow-sm">
+    <div class="flex items-center gap-4 mb-4 md:mb-0">
+      <div class="w-16 h-16 bg-[#081d57] rounded-full flex items-center justify-center text-white font-bold text-xs">LOGO</div>
+      <div>
+        <h1 class="text-2xl font-bold leading-tight">SLAP<br>2027</h1>
+        <p class="text-[10px] tracking-widest uppercase">Congreso Latinoamericano<br>de Patología</p>
+      </div>
+    </div>
+    <nav class="flex flex-wrap justify-center gap-8 text-sm font-semibold items-center">
+      <a href="#" class="hover:text-[#6c4698] transition-colors">INICIO</a>
+      <a href="#" class="hover:text-[#6c4698] transition-colors">SOBRE EL EVENTO</a>
+      <a href="#" class="hover:text-[#6c4698] transition-colors">EXPOSITORES</a>
+      <a href="#" class="hover:text-[#6c4698] transition-colors">INSCRIPCIÓN</a>
+      <a href="#" class="border-b-2 border-[#6c4698] pb-1 text-[#6c4698]">CONTACTO</a>
+    </nav>
+  </header>
+
+  <!-- Main Content: Contacto -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-6 py-16">
+    
+    <!-- Título -->
+    <div class="text-center mb-16">
+      <h2 class="text-[#4192a1] font-bold tracking-widest text-sm mb-2 uppercase">¿Tienes alguna duda?</h2>
+      <h3 class="text-4xl font-black text-[#081d57] uppercase">Contáctanos</h3>
+      <div class="w-24 h-1 bg-gradient-to-r from-[#6c4698] to-[#d96837] mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+      
+      <!-- Información de Contacto -->
+      <div class="bg-[#081d57] text-white p-10 md:p-12 flex flex-col justify-between relative overflow-hidden">
+        <!-- Decoración de fondo -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-[#6c4698] to-transparent opacity-30 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+        
+        <div class="relative z-10 space-y-10">
+          <div>
+            <h4 class="text-3xl font-bold mb-4">Información del Evento</h4>
+            <p class="text-sm opacity-80 leading-relaxed">Estamos aquí para ayudarte. Si tienes preguntas sobre inscripciones, avales o la sede del evento, no dudes en comunicarte con nuestro equipo.</p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-[#4192a1] text-xl">📍</div>
+              <div>
+                <p class="text-xs font-bold text-[#4192a1] uppercase tracking-wider mb-1">Sede del Congreso</p>
+                <p class="text-sm font-semibold">Centro de Convenciones Barceló</p>
+                <p class="text-xs opacity-70">Punta Cana, República Dominicana</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-[#d96837] text-xl">✉️</div>
+              <div>
+                <p class="text-xs font-bold text-[#d96837] uppercase tracking-wider mb-1">Correo Electrónico</p>
+                <p class="text-sm font-semibold">info@slap2027.org</p>
+                <p class="text-xs opacity-70">Soporte técnico y académico</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-[#6c4698] text-xl">📞</div>
+              <div>
+                <p class="text-xs font-bold text-[#6c4698] uppercase tracking-wider mb-1">Teléfono / WhatsApp</p>
+                <p class="text-sm font-semibold">+1 (809) 000-0000</p>
+                <p class="text-xs opacity-70">Lunes a Viernes, 9:00 AM - 5:00 PM (AST)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario de Contacto -->
+      <div class="p-10 md:p-12">
+        <h4 class="text-2xl font-bold text-[#081d57] mb-6">Envíanos un mensaje</h4>
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold mb-2 uppercase tracking-wide text-gray-700">Nombre Completo</label>
+              <input type="text" required class="w-full px-4 py-3 bg-[#f8f8fa] border border-gray-200 rounded-lg focus:outline-none focus:border-[#6c4698] focus:bg-white transition-all text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-bold mb-2 uppercase tracking-wide text-gray-700">Correo Electrónico</label>
+              <input type="email" required class="w-full px-4 py-3 bg-[#f8f8fa] border border-gray-200 rounded-lg focus:outline-none focus:border-[#6c4698] focus:bg-white transition-all text-sm">
+            </div>
+          </div>
+          
+          <div>
+            <label class="block text-xs font-bold mb-2 uppercase tracking-wide text-gray-700">Asunto</label>
+            <input type="text" required class="w-full px-4 py-3 bg-[#f8f8fa] border border-gray-200 rounded-lg focus:outline-none focus:border-[#6c4698] focus:bg-white transition-all text-sm">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold mb-2 uppercase tracking-wide text-gray-700">Mensaje</label>
+            <textarea rows="5" required class="w-full px-4 py-3 bg-[#f8f8fa] border border-gray-200 rounded-lg focus:outline-none focus:border-[#6c4698] focus:bg-white transition-all text-sm resize-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-[#6c4698] text-white px-8 py-4 rounded-full font-bold hover:bg-[#523375] transition-all shadow-lg shadow-[#6c4698]/20">
+            ENVIAR MENSAJE
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#081d57] text-white px-10 py-12 mt-12">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      
+      <div class="flex items-center gap-4">
+         <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#081d57] font-bold text-[10px]">LOGO</div>
+         <div>
+          <h1 class="text-xl font-bold leading-tight">SLAP<br>2027</h1>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs">
+         <div class="w-8 h-8 rounded-full border border-[#4192a1] flex items-center justify-center text-[#4192a1] text-base">📍</div>
+         <div>
+           <p class="font-bold">CENTRO DE CONVENCIONES</p>
+           <p class="text-[#4192a1]">BARCELÓ PUNTA CANA</p>
+           <p class="opacity-70">PUNTA CANA, REPÚBLICA DOMINICANA</p>
+         </div>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs">
+         <div class="w-8 h-8 rounded-full border border-[#6c4698] flex items-center justify-center text-[#6c4698] text-base">📅</div>
+         <div>
+           <p class="font-bold text-sm">20 - 30</p>
+           <p class="opacity-70">OCTUBRE, 2027</p>
+         </div>
+      </div>
+
+      <div>
+        <p class="text-xs font-bold mb-2 text-center md:text-left">SÍGUENOS</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-8 h-8 bg-white text-[#081d57] rounded-full flex items-center justify-center font-bold hover:bg-gray-200 transition-colors">f</a>
+          <a href="#" class="w-8 h-8 bg-white text-[#081d57] rounded-full flex items-center justify-center font-bold hover:bg-gray-200 transition-colors">in</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
