@@ -15,13 +15,14 @@
 </head>
 
 <body class="bg-[#f8f8fa] text-[#081d57] min-h-screen">
-    <!-- Header / Navbar -->
-  <header class="flex flex-col md:flex-row justify-between items-center px-6 md:px-10 py-4 md:py-6 bg-white shadow-sm sticky top-0 z-50">
+  <!-- Header / Navbar -->
+  <header
+    class="flex flex-col md:flex-row justify-between items-center px-6 md:px-10 py-4 md:py-6 bg-white shadow-sm sticky top-0 z-50">
     <div class="flex justify-between items-center w-full md:w-auto">
       <a href="index.html" class="flex items-center gap-4">
         <img src="images/LOGO SLAP TRANSP.png" alt="SLAP 2027 Logo" class="h-16 md:h-20 w-auto" />
       </a>
-      
+
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-btn" class="md:hidden p-2 text-[#081d57] hover:text-[#6c4698] focus:outline-none">
         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,19 +32,32 @@
     </div>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden md:flex flex-wrap justify-center gap-6 text-sm font-semibold items-center z-50 relative mt-4 md:mt-0">
-      <a href="index.html" class="nav-link-top text-[#6c4698] border-b-2 border-[#6c4698] pb-1 hover:text-[#6c4698] transition-colors">INICIO</a>
-      
+    <nav
+      class="hidden md:flex flex-wrap justify-center gap-6 text-sm font-semibold items-center z-50 relative mt-4 md:mt-0">
+      <a href="index.html"
+        class="nav-link-top text-[#6c4698] border-b-2 border-[#6c4698] pb-1 hover:text-[#6c4698] transition-colors">INICIO</a>
+
       <div class="relative group">
         <button class="hover:text-[#6c4698] transition-colors flex items-center gap-1 py-2 outline-none">
           EVENTO
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
         </button>
-        <div class="absolute top-full left-1/2 -translate-x-1/2 w-48 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 flex flex-col py-2">
-          <a href="evento.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Sobre el Evento</a>
-          <a href="programa.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Programa Científico</a>
-          <a href="sede.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Sede y Alojamiento</a>
-          <a href="comite.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Comité Directivo</a>
+        <div
+          class="absolute top-full left-1/2 -translate-x-1/2 w-48 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 flex flex-col py-2">
+          <a href="evento.html"
+            class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Sobre el
+            Evento</a>
+          <a href="programa.html"
+            class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Programa
+            Científico</a>
+          <a href="sede.html"
+            class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Sede y
+            Alojamiento</a>
+          <a href="comite.html"
+            class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Comité
+            Directivo</a>
         </div>
       </div>
 
@@ -52,30 +66,44 @@
       <div class="relative group">
         <button class="hover:text-[#6c4698] transition-colors flex items-center gap-1 py-2 outline-none">
           INFORMACIÓN
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
         </button>
-        <div class="absolute top-full left-1/2 -translate-x-1/2 w-56 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 flex flex-col py-2">
-          <a href="lineamientos.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Lineamientos de Trabajos</a>
-          <a href="faq.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Preguntas Frecuentes</a>
-          <a href="contacto.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Contacto</a>
+        <div
+          class="absolute top-full left-1/2 -translate-x-1/2 w-56 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 flex flex-col py-2">
+          <a href="lineamientos.html"
+            class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Lineamientos
+            de Trabajos</a>
+          <a href="faq.html"
+            class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Preguntas
+            Frecuentes</a>
+          <a href="contacto.html"
+            class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Contacto</a>
         </div>
       </div>
 
-      <a href="formulario.html" class="bg-[#6c4698] text-white px-6 py-2 rounded-full hover:bg-[#523375] transition-colors ml-2">INSCRIPCIÓN</a>
+      <a href="formulario.html"
+        class="bg-[#6c4698] text-white px-6 py-2 rounded-full hover:bg-[#523375] transition-colors ml-2">INSCRIPCIÓN</a>
     </nav>
   </header>
 
   <!-- Mobile Menu Overlay -->
   <div id="mobile-menu" class="fixed inset-0 bg-black/50 z-[60] hidden opacity-0 transition-opacity duration-300">
-    <div class="absolute right-0 top-0 bottom-0 w-64 bg-white shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 overflow-y-auto" id="mobile-menu-panel">
+    <div
+      class="absolute right-0 top-0 bottom-0 w-64 bg-white shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 overflow-y-auto"
+      id="mobile-menu-panel">
       <div class="p-6 flex justify-between items-center border-b border-gray-100">
         <span class="font-bold text-[#081d57]">Menú</span>
         <button id="close-mobile-menu" class="p-2 text-gray-500 hover:text-red-500 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
         </button>
       </div>
       <div class="flex flex-col p-4 gap-2 text-[#081d57] font-semibold text-sm">
-        <a href="index.html" class="p-3 rounded-lg hover:bg-[#f8f8fa] nav-link-mob bg-[#f8f8fa] text-[#6c4698] border-l-4 border-[#6c4698]">Inicio</a>
+        <a href="index.html"
+          class="p-3 rounded-lg hover:bg-[#f8f8fa] nav-link-mob bg-[#f8f8fa] text-[#6c4698] border-l-4 border-[#6c4698]">Inicio</a>
         <a href="evento.html" class="p-3 rounded-lg hover:bg-[#f8f8fa] nav-link-mob">Sobre el Evento</a>
         <a href="programa.html" class="p-3 rounded-lg hover:bg-[#f8f8fa] nav-link-mob">Programa Científico</a>
         <a href="sede.html" class="p-3 rounded-lg hover:bg-[#f8f8fa] nav-link-mob">Sede y Alojamiento</a>
@@ -84,7 +112,8 @@
         <a href="lineamientos.html" class="p-3 rounded-lg hover:bg-[#f8f8fa] nav-link-mob">Lineamientos</a>
         <a href="faq.html" class="p-3 rounded-lg hover:bg-[#f8f8fa] nav-link-mob">Preguntas Frecuentes</a>
         <a href="contacto.html" class="p-3 rounded-lg hover:bg-[#f8f8fa] nav-link-mob">Contacto</a>
-        <a href="formulario.html" class="mt-4 bg-[#6c4698] text-white p-3 rounded-xl text-center shadow-lg">INSCRIPCIÓN</a>
+        <a href="formulario.html"
+          class="mt-4 bg-[#6c4698] text-white p-3 rounded-xl text-center shadow-lg">INSCRIPCIÓN</a>
       </div>
     </div>
   </div>
@@ -107,7 +136,8 @@
           style="background-image: url(images/franja.png)"></div>
 
         <a href="programa.html" class="flex items-center gap-4 mb-6 hover:opacity-80 transition-opacity group">
-          <div class="w-12 h-12 rounded-full border-2 border-[#6c4698] flex items-center justify-center text-[#6c4698] text-xl group-hover:bg-[#6c4698] group-hover:text-white transition-colors">
+          <div
+            class="w-12 h-12 rounded-full border-2 border-[#6c4698] flex items-center justify-center text-[#6c4698] text-xl group-hover:bg-[#6c4698] group-hover:text-white transition-colors">
             📅
           </div>
           <div>
@@ -117,7 +147,8 @@
         </a>
 
         <a href="sede.html" class="flex items-center gap-4 mb-10 hover:opacity-80 transition-opacity group">
-          <div class="w-12 h-12 rounded-full border-2 border-[#4192a1] flex items-center justify-center text-[#4192a1] text-xl group-hover:bg-[#4192a1] group-hover:text-white transition-colors">
+          <div
+            class="w-12 h-12 rounded-full border-2 border-[#4192a1] flex items-center justify-center text-[#4192a1] text-xl group-hover:bg-[#4192a1] group-hover:text-white transition-colors">
             📍
           </div>
           <div>
@@ -143,7 +174,8 @@
 
   <section id="sobre-el-evento"
     class="max-w-6xl mx-auto px-6 md:px-10 py-12 md:py-16 flex flex-col md:flex-row justify-center gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white shadow-sm mt-8 rounded-xl relative z-20">
-    <a href="comite.html" class="flex-1 px-4 flex flex-col items-center pt-8 md:pt-0 hover:bg-gray-50 transition-colors rounded-xl group">
+    <a href="comite.html"
+      class="flex-1 px-4 flex flex-col items-center pt-8 md:pt-0 hover:bg-gray-50 transition-colors rounded-xl group">
       <div
         class="w-16 h-16 rounded-full bg-[#f8f8fa] flex items-center justify-center text-[#6c4698] text-3xl mb-4 border border-[#6c4698]/20 group-hover:bg-[#6c4698] group-hover:text-white transition-colors">
         👥
@@ -153,7 +185,8 @@
         Conoce a los miembros de la Junta Directiva del congreso.
       </p>
     </a>
-    <a href="comite.html" class="flex-1 px-4 flex flex-col items-center pt-8 md:pt-0 hover:bg-gray-50 transition-colors rounded-xl group">
+    <a href="comite.html"
+      class="flex-1 px-4 flex flex-col items-center pt-8 md:pt-0 hover:bg-gray-50 transition-colors rounded-xl group">
       <div
         class="w-16 h-16 rounded-full bg-[#f8f8fa] flex items-center justify-center text-[#6c4698] text-3xl mb-4 border border-[#6c4698]/20 group-hover:bg-[#6c4698] group-hover:text-white transition-colors">
         🔬
@@ -163,7 +196,8 @@
         Conoce a los integrantes del Comité Científico del congreso.
       </p>
     </a>
-    <a href="expositores.html" id="expositores" class="flex-1 px-4 flex flex-col items-center pt-8 md:pt-0 hover:bg-gray-50 transition-colors rounded-xl group">
+    <a href="expositores.html" id="expositores"
+      class="flex-1 px-4 flex flex-col items-center pt-8 md:pt-0 hover:bg-gray-50 transition-colors rounded-xl group">
       <div
         class="w-16 h-16 rounded-full bg-[#f8f8fa] flex items-center justify-center text-[#6c4698] text-3xl mb-4 border border-[#6c4698]/20 group-hover:bg-[#6c4698] group-hover:text-white transition-colors">
         👨‍🏫
@@ -295,10 +329,11 @@
     </div>
   </section>
 
-    <!-- Footer -->
+  <!-- Footer -->
   <footer class="bg-[#081d57] text-white px-6 md:px-10 py-12 mt-12">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:p-8 text-center md:text-left">
-      
+    <div
+      class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:p-8 text-center md:text-left">
+
       <div class="flex flex-col md:flex-row items-center gap-4">
         <img src="images/LOGO SLAP TRANSP.png" alt="SLAP 2027 Logo" class="h-14 w-auto rounded-full bg-white p-1" />
         <div>
@@ -307,7 +342,9 @@
       </div>
 
       <div class="flex flex-col md:flex-row items-center gap-4 text-xs">
-        <div class="w-8 h-8 rounded-full border border-[#4192a1] flex items-center justify-center text-[#4192a1] text-base shrink-0">📍</div>
+        <div
+          class="w-8 h-8 rounded-full border border-[#4192a1] flex items-center justify-center text-[#4192a1] text-base shrink-0">
+          📍</div>
         <div>
           <p class="font-bold">CENTRO DE CONVENCIONES</p>
           <p class="text-[#4192a1]">BARCELÓ PUNTA CANA</p>
@@ -316,7 +353,9 @@
       </div>
 
       <div class="flex flex-col md:flex-row items-center gap-4 text-xs">
-        <div class="w-8 h-8 rounded-full border border-[#6c4698] flex items-center justify-center text-[#6c4698] text-base shrink-0">📅</div>
+        <div
+          class="w-8 h-8 rounded-full border border-[#6c4698] flex items-center justify-center text-[#6c4698] text-base shrink-0">
+          📅</div>
         <div>
           <p class="font-bold text-sm">20 - 30</p>
           <p class="opacity-70">OCTUBRE, 2027</p>
@@ -326,14 +365,17 @@
       <div class="flex flex-col items-center md:items-start">
         <p class="text-xs font-bold mb-2">SÍGUENOS</p>
         <div class="flex gap-3">
-          <a href="#" aria-label="Facebook" class="w-8 h-8 bg-white text-[#081d57] rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 8.5H15V5.5C14.7 5.5 13.9 5.5 13 5.5C10.8 5.5 9.3 6.8 9.3 9.5V12H6.5V15.2H9.3V22H12.7V15.2H15.4L15.8 12H12.7V9.8C12.7 8.9 13 8.5 13.5 8.5Z"/></svg>
+          <a href="#" aria-label="Facebook"
+            class="w-8 h-8 bg-white text-[#081d57] rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+            <img src="images/facebook-svgrepo-com.svg" alt="">
           </a>
-          <a href="#" aria-label="Instagram" class="w-8 h-8 bg-white text-[#081d57] rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.4" cy="6.6" r="1"></circle></svg>
+          <a href="#" aria-label="Instagram"
+            class="w-8 h-8 bg-white text-[#081d57] rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+            <img src="images/instagram-svgrepo-com.svg" alt="">
           </a>
-          <a href="#" aria-label="LinkedIn" class="w-8 h-8 bg-white text-[#081d57] rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.9 8.2A1.8 1.8 0 1 0 6.9 4.6a1.8 1.8 0 0 0 0 3.6ZM5.2 9.8H8.6V19H5.2V9.8Zm5.2 0H13.7V11h.1c.7-1.3 2.4-2.7 5-2.7 5.3 0 6.2 3.5 6.2 8V19H21.7V17c0-2.1-.1-4.8-2.9-4.8-2.9 0-3.3 2.3-3.3 4.6V19H13.4V9.8Z"/></svg>
+          <a href="#" aria-label="LinkedIn"
+            class="w-8 h-8 bg-white text-[#081d57] rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+            <img src="images/linkedin-svgrepo-com (1).svg" alt="">
           </a>
         </div>
       </div>
@@ -362,10 +404,10 @@
       }, 300);
     }
 
-    if(btn) btn.addEventListener('click', openMenu);
-    if(closeBtn) closeBtn.addEventListener('click', closeMenu);
-    if(menu) menu.addEventListener('click', (e) => {
-      if(e.target === menu) closeMenu();
+    if (btn) btn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (menu) menu.addEventListener('click', (e) => {
+      if (e.target === menu) closeMenu();
     });
   </script>
 </body>
