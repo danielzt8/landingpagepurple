@@ -17,12 +17,37 @@
     <a href="index.html" class="flex items-center gap-4 mb-4 md:mb-0">
       <img src="images/LOGO SLAP TRANSP.png" alt="SLAP 2027 Logo" class="h-20 w-auto" />
     </a>
-    <nav class="flex flex-wrap justify-center gap-8 text-sm font-semibold items-center">
-      <a href="index.html" class="hover:text-[#6c4698] transition-colors">INICIO</a>
-      <a href="evento.html" class="hover:text-[#6c4698] transition-colors">SOBRE EL EVENTO</a>
-      <a href="expositores.html" class="hover:text-[#6c4698] transition-colors">EXPOSITORES</a>
-      <a href="contacto.html" class="hover:text-[#6c4698] transition-colors">CONTACTO</a>
-      <a href="formulario.html" class="bg-[#6c4698] text-white px-6 py-2 rounded-full hover:bg-[#523375] transition-colors">INSCRIPCIÓN</a>
+        <nav class="flex flex-wrap justify-center gap-6 text-sm font-semibold items-center z-50 relative">
+      <a href="index.html" class="nav-link-top hover:text-[#6c4698] transition-colors">INICIO</a>
+      
+      <div class="relative group">
+        <button class="hover:text-[#6c4698] transition-colors flex items-center gap-1 py-2 outline-none">
+          EVENTO
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="absolute top-full left-1/2 -translate-x-1/2 w-48 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 flex flex-col py-2">
+          <a href="evento.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Sobre el Evento</a>
+          <a href="programa.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Programa Científico</a>
+          <a href="sede.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Sede y Alojamiento</a>
+          <a href="comite.html" class="nav-link-drop text-[#6c4698] font-bold px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Comité Directivo</a>
+        </div>
+      </div>
+
+      <a href="expositores.html" class="nav-link-top hover:text-[#6c4698] transition-colors">EXPOSITORES</a>
+
+      <div class="relative group">
+        <button class="hover:text-[#6c4698] transition-colors flex items-center gap-1 py-2 outline-none">
+          INFORMACIÓN
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="absolute top-full left-1/2 -translate-x-1/2 w-56 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 flex flex-col py-2">
+          <a href="lineamientos.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Lineamientos de Trabajos</a>
+          <a href="faq.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Preguntas Frecuentes</a>
+          <a href="contacto.html" class="nav-link-drop px-4 py-2 hover:bg-[#f8f8fa] hover:text-[#6c4698] transition-colors text-left">Contacto</a>
+        </div>
+      </div>
+
+      <a href="formulario.html" class="bg-[#6c4698] text-white px-6 py-2 rounded-full hover:bg-[#523375] transition-colors ml-2">INSCRIPCIÓN</a>
     </nav>
   </header>
 
