@@ -169,33 +169,106 @@
     </div>
 
     <!-- Comité Científico -->
-    <!-- <div>
-      <h4 class="text-2xl font-bold text-[#4192a1] mb-8 text-center border-b-2 border-gray-200 pb-4">Comité Científico Organizador</h4>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
-          <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center text-white/50 text-xs font-bold">FOTO</div>
-          <h5 class="font-bold text-[#081d57]">Dr. Nombre Apellido</h5>
-          <p class="text-gray-500 text-xs mt-1">Coordinador Científico</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
-          <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center text-white/50 text-xs font-bold">FOTO</div>
-          <h5 class="font-bold text-[#081d57]">Dra. Nombre Apellido</h5>
-          <p class="text-gray-500 text-xs mt-1">Vocal Científico</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
-          <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center text-white/50 text-xs font-bold">FOTO</div>
-          <h5 class="font-bold text-[#081d57]">Dr. Nombre Apellido</h5>
-          <p class="text-gray-500 text-xs mt-1">Vocal Científico</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
-          <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center text-white/50 text-xs font-bold">FOTO</div>
-          <h5 class="font-bold text-[#081d57]">Dra. Nombre Apellido</h5>
-          <p class="text-gray-500 text-xs mt-1">Vocal Científico</p>
-        </div>
-
+   <div>
+  <h4 class="text-2xl font-bold text-[#4192a1] mb-8 text-center border-b-2 border-gray-200 pb-4">Comité Científico Organizador</h4>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    
+    <!-- Tarjeta 1 -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 flex flex-col overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-md">
+      <!-- Contenedor de la foto (ancho completo y cuadrada) -->
+      <div class="w-full aspect-square bg-gray-200 flex items-center justify-center text-gray-400 text-sm font-bold relative">
+        <img src="ruta-a-la-foto.jpg" alt="Foto" class="w-full h-full object-cover hidden" />
+        FOTO
       </div>
-    </div> -->
+      
+      <!-- Contenedor del texto -->
+      <div class="p-6 flex flex-col flex-grow items-center text-center">
+        <h5 class="font-bold text-[#081d57] text-lg">Dr. Nombre Apellido</h5>
+        <p class="text-[#4192a1] text-sm font-medium mt-1">Coordinador Científico</p>
+        <p class="text-gray-500 text-xs mt-3 line-clamp-2">Breve descripción de su especialidad o experiencia en el área médica.</p>
+        <button class="mt-auto pt-5 text-sm text-[#081d57] font-semibold hover:text-[#4192a1] transition-colors" onclick="abrirModal('id_medico_1')">
+          + Ver perfil
+        </button>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 flex flex-col overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-md">
+      <div class="w-full aspect-square bg-gray-200 flex items-center justify-center text-gray-400 text-sm font-bold relative">
+        FOTO
+      </div>
+      <div class="p-6 flex flex-col flex-grow items-center text-center">
+        <h5 class="font-bold text-[#081d57] text-lg">Dra. Nombre Apellido</h5>
+        <p class="text-[#4192a1] text-sm font-medium mt-1">Vocal Científico</p>
+        <p class="text-gray-500 text-xs mt-3 line-clamp-2">Breve descripción de su especialidad o experiencia en el área médica.</p>
+        <button class="mt-auto pt-5 text-sm text-[#081d57] font-semibold hover:text-[#4192a1] transition-colors" onclick="abrirModal('id_medico_2')">
+          + Ver perfil
+        </button>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 flex flex-col overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-md">
+      <div class="w-full aspect-square bg-gray-200 flex items-center justify-center text-gray-400 text-sm font-bold relative">
+        FOTO
+      </div>
+      <div class="p-6 flex flex-col flex-grow items-center text-center">
+        <h5 class="font-bold text-[#081d57] text-lg">Dr. Nombre Apellido</h5>
+        <p class="text-[#4192a1] text-sm font-medium mt-1">Vocal Científico</p>
+        <p class="text-gray-500 text-xs mt-3 line-clamp-2">Breve descripción de su especialidad o experiencia en el área médica.</p>
+        <button class="mt-auto pt-5 text-sm text-[#081d57] font-semibold hover:text-[#4192a1] transition-colors" onclick="abrirModal('id_medico_3')">
+          + Ver perfil
+        </button>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 flex flex-col overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-md">
+      <div class="w-full aspect-square bg-gray-200 flex items-center justify-center text-gray-400 text-sm font-bold relative">
+        FOTO
+      </div>
+      <div class="p-6 flex flex-col flex-grow items-center text-center">
+        <h5 class="font-bold text-[#081d57] text-lg">Dra. Nombre Apellido</h5>
+        <p class="text-[#4192a1] text-sm font-medium mt-1">Vocal Científico</p>
+        <p class="text-gray-500 text-xs mt-3 line-clamp-2">Breve descripción de su especialidad o experiencia en el área médica.</p>
+        <button class="mt-auto pt-5 text-sm text-[#081d57] font-semibold hover:text-[#4192a1] transition-colors" onclick="abrirModal('id_medico_4')">
+          + Ver perfil
+        </button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<!-- Contenedor del Pop-up (Modal) -->
+<div id="modal-perfil" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+  <div class="bg-white rounded-xl w-full max-w-md overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 relative">
+    
+    <!-- Botón de Cerrar -->
+    <button onclick="cerrarModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-10 bg-white rounded-full p-1 shadow-sm transition-colors">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+
+    <!-- Foto del Pop-up (Ancho completo y cuadrada) -->
+    <div class="w-full aspect-square bg-gray-200 flex items-center justify-center text-gray-400 font-bold relative">
+        <img id="modal-img" src="" alt="Foto" class="w-full h-full object-cover hidden" />
+        FOTO
+    </div>
+    
+    <!-- Contenido del Pop-up -->
+    <div class="p-6 text-center">
+      <h3 id="modal-nombre" class="text-2xl font-bold text-[#081d57] mb-1">Nombre</h3>
+      <p id="modal-cargo" class="text-[#4192a1] font-medium text-sm mb-4">Cargo</p>
+      <div class="text-gray-600 text-sm leading-relaxed text-left border-t border-gray-100 pt-4 overflow-y-auto max-h-48">
+        <p id="modal-bio">Aquí va la biografía completa o información extendida del expositor...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   </main>
 
@@ -273,6 +346,59 @@
     if(menu) menu.addEventListener('click', (e) => {
       if(e.target === menu) closeMenu();
     });
+
+
+    // Datos extendidos de los doctores (vinculados por el ID de tu onclick)
+  const doctores = {
+    'id_medico_1': { 
+        nombre: 'Dr. Nombre Apellido 1', 
+        cargo: 'Coordinador Científico', 
+        bio: 'Aquí puedes escribir el texto largo con la trayectoria profesional, títulos y experiencia detallada del doctor.' 
+    },
+    'id_medico_2': { 
+        nombre: 'Dra. Nombre Apellido 2', 
+        cargo: 'Vocal Científico', 
+        bio: 'Información detallada sobre la doctora, sus investigaciones y rol en el comité.' 
+    },
+    'id_medico_3': { 
+        nombre: 'Dr. Nombre Apellido 3', 
+        cargo: 'Vocal Científico', 
+        bio: 'Especialista en su área con múltiples publicaciones...' 
+    },
+    'id_medico_4': { 
+        nombre: 'Dra. Nombre Apellido 4', 
+        cargo: 'Vocal Científico', 
+        bio: 'Experiencia de más de 10 años en el campo científico...' 
+    }
+  };
+
+  const modal = document.getElementById('modal-perfil');
+  
+  function abrirModal(id) {
+    const doc = doctores[id];
+    if(!doc) return; // Si no existe el ID, no hace nada
+
+    // Inyectar los datos en el HTML del modal
+    document.getElementById('modal-nombre').innerText = doc.nombre;
+    document.getElementById('modal-cargo').innerText = doc.cargo;
+    document.getElementById('modal-bio').innerText = doc.bio;
+    
+    // Mostrar modal con animación
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      modal.classList.remove('opacity-0');
+      modal.children[0].classList.remove('scale-95');
+    }, 10);
+  }
+
+  function cerrarModal() {
+    // Ocultar modal con animación
+    modal.classList.add('opacity-0');
+    modal.children[0].classList.add('scale-95');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 300);
+  }
   </script>
 </body>
 </html>
